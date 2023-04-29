@@ -4,7 +4,7 @@ services:
   jupyter-notebook:
     image: jupyter/scipy-notebook
     volumes:
-      - ${WORKING_DIR}:/home/jovyan/work
+      - ${WORKING_DIR}:/home/jovyan/work/working
       - ${DATASET_DIR}:/home/jovyan/work/datasets
     ports:
       - ${PORT}:8888
