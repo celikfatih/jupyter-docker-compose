@@ -2,7 +2,7 @@ version: '3'
 
 services:
   jupyter-notebook:
-    image: jupyter/scipy-notebook
+    image: jupyter/scipy-notebook@sha256:45f432e2df146f2e212c18971098506f39eab7d9b5a325f71a1a424e9cdbd487
     volumes:
       - ${WORKING_DIR}:/home/jovyan/work/working
       - ${DATASET_DIR}:/home/jovyan/work/datasets
